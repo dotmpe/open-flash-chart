@@ -3,8 +3,10 @@
 	
 	public class PointBarFade extends PointBarBase
 	{
-		
-		public function PointBarFade( index:Number, value:Object, colour:Number, group:Number )
+
+		//elskwid [links]
+		// FIXME: Need to call links here		
+		public function PointBarFade( index:Number, value:Object, colour:Number, group:Number,'' )
 		{
 			super(index,value,colour,'',group);
 		}

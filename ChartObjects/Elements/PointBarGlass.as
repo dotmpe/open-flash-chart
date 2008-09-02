@@ -5,7 +5,9 @@
 	public class PointBarGlass extends PointBarBase
 	{
 		
-		public function PointBarGlass( index:Number, style:Object, group:Number ) {
+		//elskwid [links]
+		// FIXME: Need to call links here		
+		public function PointBarGlass( index:Number, style:Object, group:Number, '' ) {
 			
 			
 			super(index, style.top, style.colour, style.tip, group);

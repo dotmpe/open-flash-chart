@@ -22,6 +22,10 @@ package ChartObjects {
 		//
 		public var values:Array;
 		
+		//elskwid [links]
+		// - added ti get links working ...
+		public var links:Array;
+		
 		protected var axis:Number;
 		
 		public function Base()

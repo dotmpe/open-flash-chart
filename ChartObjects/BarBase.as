@@ -25,6 +25,7 @@
 			
 			this.style = {
 				values:				[],
+				links: 				[], // elskwid [links]
 				colour:				'#3030d0',
 				text:				'',		// <-- default not display a key
 				'font-size':		12,
@@ -38,7 +39,7 @@
 			this.key		= this.style.text;
 			this.font_size	= this.style['font-size'];
 
-			
+			this.links = this.style.links; //elskwid [links]
 			
 //			this.axis = which_axis_am_i_attached_to(data, num);
 			

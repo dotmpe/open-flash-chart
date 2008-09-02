@@ -5,7 +5,9 @@
 	
 	public class PointBar3D extends PointBarBase {
 		
-		public function PointBar3D( index:Number, style:Object, group:Number ) {
+		//elskwid [links]
+		// FIXME: Need to call links here
+		public function PointBar3D( index:Number, style:Object, group:Number, '' ) {
 			
 			
 			super(index, style.top, style.colour, style.tip, group);

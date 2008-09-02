@@ -3,10 +3,11 @@
 	
 	public class PointBarOutline extends PointBarBase {
 		private var outline:Number;
-		
-		public function PointBarOutline( index:Number, style:Object, group:Number )	{
+
+		//elskwid [links] -- added link:String
+		public function PointBarOutline( index:Number, style:Object, group:Number, link:String )	{
 			
-			super( index, style, style.colour, style.tip, group );
+			super( index, style, style.colour, style.tip, group, link );
 			this.outline = style['outline-colour'];
 		}
 		

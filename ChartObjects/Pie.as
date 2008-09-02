@@ -15,7 +15,7 @@
 	{
 		
 		private var labels:Array;
-		private var links:Array;
+		// private var links:Array; elskwid [links] -- moved into base
 		private var colours:Array;
 		private var gradientFill:String = 'true'; //toggle gradients
 		private var border_width:Number = 1;

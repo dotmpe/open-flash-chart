@@ -15,7 +15,9 @@
 		protected var top:Number;
 		protected var bottom:Number;
 		
-		public function PointBarBase( index:Number, value:Object, colour:Number, tooltip:String, group:Number )
+		//elskwid [links]
+		// FIXME: Need to call links here		
+		public function PointBarBase( index:Number, value:Object, colour:Number, tooltip:String, group:Number, '' )
 		{
 			super();
 			this.index = index;
@@ -30,6 +32,7 @@
 			
 			this.addEventListener(MouseEvent.MOUSE_OVER, this.mouseOver);
 			this.addEventListener(MouseEvent.MOUSE_OUT, this.mouseOut);
+			this.set_link(link); //elskwid [links]
 		}
 		
 		//

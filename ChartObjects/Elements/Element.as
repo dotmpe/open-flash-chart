@@ -7,7 +7,9 @@
 	import caurina.transitions.Tweener;
 	import caurina.transitions.Equations;
 	import flash.geom.Point;
-	
+	import flash.net.URLRequest; // elskwid [links]
+	import flash.net.navigateToURL; // elskwid [links]
+		
 	public class Element extends Sprite {
 		//
 		// for line data
@@ -104,14 +106,19 @@
 		}
 		
 		public function set_link( s:String ):void {
-			this.link = s;
-			this.buttonMode = true;
-			this.useHandCursor = true;
-			this.addEventListener(MouseEvent.MOUSE_UP, this.mouseUp);
+			if (s != null) // elskwid [links] 
+			{
+				this.link = s;
+				this.buttonMode = true;
+				this.useHandCursor = true;
+				this.addEventListener(MouseEvent.MOUSE_UP, this.mouseUp);
+			}
 		}
 		
 		private function mouseUp(event:Event):void {
 			tr.ace( this.link );
+			var url:URLRequest = new URLRequest(this.link); //elskwid [links]
+			navigateToURL(url, "_self"); // elskwid [links]			
 		}
 		
 		public function get_tip_pos():Object {

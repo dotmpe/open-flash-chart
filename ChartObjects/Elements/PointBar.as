@@ -7,7 +7,9 @@ package ChartObjects.Elements {
 	
 		public function PointBar( index:Number, style:Object, group:Number ) {
 			
-			super(index, style, style.colour, style.tip, group);
+			//elskwid [links]
+			// FIXME: Need to call links here
+			super(index, style, style.colour, style.tip, group, '');
 		}
 		
 		public override function resize( sc:ScreenCoords, axis:Number ):void {

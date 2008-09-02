@@ -43,8 +43,9 @@
 			
 			if( default_style['outline-colour'] is String )
 				default_style['outline-colour'] = Utils.get_colour( default_style['outline-colour'] );
-				
-			return new PointBarOutline( index, default_style, this.group );
+			
+			//elskwid [links] -- added links to call
+			return new PointBarOutline( index, default_style, this.group, this.links[index] );
 		}
 	}
 }
