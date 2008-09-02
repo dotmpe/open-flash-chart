@@ -5,11 +5,10 @@
 		private var outline:Number;
 		private var offset:Number;
 		
-		//elskwid [links]
-		// FIXME: Need to call links here		
-		public function PointBarSketch( index:Number, style:Object, group:Number, '' ) {
-			
-			super( index, style.top, style.colour, style.tip, group );
+		public function PointBarSketch( index:Number, style:Object, group:Number ) {
+			//elskwid [links]
+			// FIXME: Need to call links here		
+			super( index, style.top, style.colour, style.tip, group, '' );
 			this.outline = style['outline-colour'];
 			this.offset = style.offset;
 		}

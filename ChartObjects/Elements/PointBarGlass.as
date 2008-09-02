@@ -5,12 +5,11 @@
 	public class PointBarGlass extends PointBarBase
 	{
 		
-		//elskwid [links]
-		// FIXME: Need to call links here		
-		public function PointBarGlass( index:Number, style:Object, group:Number, '' ) {
+		public function PointBarGlass( index:Number, style:Object, group:Number ) {
 			
-			
-			super(index, style.top, style.colour, style.tip, group);
+			//elskwid [links]
+			// FIXME: Need to call links here		
+			super(index, style.top, style.colour, style.tip, group, '');
 			
 			var dropShadow:DropShadowFilter = new flash.filters.DropShadowFilter();
 			dropShadow.blurX = 5;

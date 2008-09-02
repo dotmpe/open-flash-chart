@@ -4,11 +4,11 @@
 	public class PointBarFade extends PointBarBase
 	{
 
-		//elskwid [links]
-		// FIXME: Need to call links here		
-		public function PointBarFade( index:Number, value:Object, colour:Number, group:Number,'' )
+		public function PointBarFade( index:Number, value:Object, colour:Number, group:Number )
 		{
-			super(index,value,colour,'',group);
+			//elskwid [links]
+			// FIXME: Need to call links here		
+			super(index,value,colour,'',group, '');
 		}
 		
 		public override function resize( sc:ScreenCoords, axis:Number ):void {

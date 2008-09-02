@@ -15,9 +15,8 @@
 		protected var top:Number;
 		protected var bottom:Number;
 		
-		//elskwid [links]
-		// FIXME: Need to call links here		
-		public function PointBarBase( index:Number, value:Object, colour:Number, tooltip:String, group:Number, '' )
+		//elskwid [links] -- added link:String
+		public function PointBarBase( index:Number, value:Object, colour:Number, tooltip:String, group:Number, link:String )
 		{
 			super();
 			this.index = index;

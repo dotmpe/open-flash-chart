@@ -5,14 +5,14 @@
 	public class PointBarStack extends PointBarBase {
 		private var total:Number;
 		
-		//elskwid [links]
-		// FIXME: Need to call links here		
-		public function PointBarStack( index:Number, style:Object, group:Number,'' ) {
+		public function PointBarStack( index:Number, style:Object, group:Number ) {
 			
 			// we are not passed a string value, the value
 			// is set by the parent collection later
 			this.total =  style.total;
-			super( index,  style,  style.colour, style.tip, group );
+			//elskwid [links]
+			// FIXME: Need to call links here		
+			super( index,  style,  style.colour, style.tip, group, '' );
 		}
 
 		protected override function replace_magic_values( t:String ): String {
